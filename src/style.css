@@ -9,7 +9,7 @@ body {
 #content {
     height: 100vh;
     width: 100vw;
-    background-image: url('./chef.jpg'); 
+    background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .8)), url('./chef.jpg');
     background-size: cover;
     background-position: center;
     display: grid;
@@ -26,20 +26,22 @@ body {
 }
 .sidebar {
     display: grid;
-    grid-template-columns: repeat(3, 25vw);
+    grid-template-columns: repeat(3, 1fr);
     height: 3rem;
     justify-items: center;
     margin-top: 2rem;
 }
 .sidebar > div {
-    background-color: white;
+    color: white;
     width: 8rem;
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
     text-align: center;
+    text-decoration: underline;
 }
 .sidebar > div:hover {
-    color: white;
-    background-color: transparent;
+    color: black;
+    background-color: white;
     cursor: pointer;
+    text-decoration: none;
 }

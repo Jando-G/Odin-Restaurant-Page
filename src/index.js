@@ -13,12 +13,12 @@ function initialLoad() {
 
     const sidebar = document.createElement('div');
     sidebar.classList.add('sidebar');
-    const home = document.createElement('div');
-    home.innerHTML = 'Home';
-    sidebar.appendChild(home);
     const about = document.createElement('div');
     about.innerHTML = 'About';
     sidebar.appendChild(about);
+    const menu = document.createElement('div');
+    menu.innerHTML = 'Menu';
+    sidebar.appendChild(menu);
     const contact = document.createElement('div');
     contact.innerHTML = 'Contact';
     sidebar.appendChild(contact);
