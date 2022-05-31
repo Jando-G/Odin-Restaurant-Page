@@ -4,7 +4,8 @@
   "description": "A restaurant page for my fictional restaurant",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/Jando-G/Odin-Restaurant-Page#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   }

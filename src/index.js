@@ -1,1 +1,31 @@
-console.log('working');
+import './style.css';
+
+function initialLoad() {
+    const content = document.getElementById('content');
+    
+    const frontPage = document.createElement('div');
+    frontPage.classList.add('frontPage');
+    
+    const heading = document.createElement('div');
+    frontPage.classList.add('heading');
+    heading.innerHTML = 'Le Oui Oui';
+    frontPage.appendChild(heading);
+
+    const sidebar = document.createElement('div');
+    sidebar.classList.add('sidebar');
+    const home = document.createElement('div');
+    home.innerHTML = 'Home';
+    sidebar.appendChild(home);
+    const about = document.createElement('div');
+    about.innerHTML = 'About';
+    sidebar.appendChild(about);
+    const contact = document.createElement('div');
+    contact.innerHTML = 'Contact';
+    sidebar.appendChild(contact);
+
+    content.appendChild(frontPage);
+    content.appendChild(sidebar);
+}
+
+
+initialLoad();
