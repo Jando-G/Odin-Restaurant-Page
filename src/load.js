@@ -21,6 +21,8 @@ export default function initialLoad() {
     contact.innerHTML = 'Contact';
     sidebar.appendChild(contact);
 
+    const temp = document.createElement('div');
     content.appendChild(frontPage);
     content.appendChild(sidebar);
+    content.appendChild(temp);
 }
