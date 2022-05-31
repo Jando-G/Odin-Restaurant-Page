@@ -22,7 +22,6 @@ body {
     text-align: center;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    height: 100%;
 }
 .sidebar {
     display: grid;
@@ -37,7 +36,7 @@ body {
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
     text-align: center;
-    text-decoration: underline;
+    border-bottom: solid 2px white;
 }
 .sidebar > div:hover {
     color: black;
