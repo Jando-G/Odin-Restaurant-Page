@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 * {
     box-sizing: border-box;
-    user-select: none;
 }
 body {
+    user-select: none;
     margin: 0;
+    background-color: black;
+    overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 #content {
-    height: 100vh;
-    width: 100vw;
-    background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .8)), url('./chef.jpg');
+    background:linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 1)), url('./chef.jpg');
     background-size: cover;
     background-position: center;
-    display: grid;
-    grid-template-columns: 15vw 85vw;
-    grid-template-rows: 15vh 85vh;
+    display: grid; 
+    grid-template-columns: 12vw 76vw 12vw;
+    grid-template-rows: 15vh 85vh 1fr;
 }
 .heading {
     color: rgb(255, 255, 255);
@@ -24,6 +27,7 @@ body {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     grid-row: 1 / 3;
+    justify-self: start;
 }
 .sidebar {
     display: grid;
@@ -45,4 +49,20 @@ body {
     background-color: white;
     cursor: pointer;
     text-decoration: none;
+}
+.about {
+    user-select: text;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-self: center;
+    justify-self: center;
+    width: 40%;
+    padding: 2rem;
+    grid-row: 2 / 4;
+}
+p {
+    text-indent: 3rem;
+    font-size: 1.5rem;
 }
