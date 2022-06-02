@@ -1,0 +1,2 @@
+bg image moves when switching tabs
+content + navigation goes into hero text when screen is squeezed

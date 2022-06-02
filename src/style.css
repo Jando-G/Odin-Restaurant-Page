@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Gentium+Plus:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -6,7 +6,7 @@ body {
     user-select: none;
     margin: 0;
     background-color: black;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 body::-webkit-scrollbar {
     display: none;
@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
     grid-template-rows: 15vh 85vh 1fr;
 }
 .heading {
-    color: rgb(255, 255, 255);
+    color: #f8f8ff;
     font-family: 'Catamaran', sans-serif;
     font-size: 20vh;
     text-align: center;
@@ -37,39 +37,46 @@ body::-webkit-scrollbar {
     margin-top: 2rem;
 }
 .sidebar > div {
-    color: white;
+    color: #f8f8ff;
     width: 8rem;
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
     text-align: center;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px #f8f8ff;
 }
 .sidebar > div:hover {
     color: black;
-    background-color: white;
+    background-color: #f8f8ff;
     cursor: pointer;
     text-decoration: none;
 }
 .about {
     user-select: text;
-    color: white;
-    border: 3px solid white;
+    color: #f8f8ff;
+    border: 3px solid #f8f8ff;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     align-self: center;
     justify-self: center;
-    width: 40%;
+    width: 50rem;
     padding: 2rem;
     grid-row: 2 / 4;
+}
+h1 {
+    font-family: 'Gentium Plus', serif;
+    font-weight: 700;
+    text-align: center;
 }
 p {
     text-indent: 3rem;
     font-size: 1.5rem;
+    font-family: 'Gentium Plus', serif;
+    font-weight: 400;
 }
 .contact {
     user-select: text;
-    color: white;
-    border: 3px solid white;
+    color: #f8f8ff;
+    border: 3px solid #f8f8ff;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     align-self: center;
@@ -77,4 +84,26 @@ p {
     width: 40%;
     padding: 2rem;
     grid-row: 2 / 4;
+    text-align: center;
+}
+input, textarea, button {
+    display: inline-block;
+    width: 30rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    background-color: #f8f8ff;
+    font-family: 'Gentium Plus', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    resize: vertical;
+}
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, .2);
 }
