@@ -1,3 +1,5 @@
+import logo from './github-logo.png';
+
 export default function initialLoad() {
     const content = document.getElementById('content');
     
@@ -28,4 +30,14 @@ export default function initialLoad() {
     content.appendChild(frontPage);
     content.appendChild(sidebar);
     content.appendChild(temp);
+
+    const footer = document.createElement('footer');
+    const credit = document.createElement('p');
+    credit.innerHTML = `<a href="https://github.com/Jando-G">
+    Made by Alejandro Gutierrez 2022</a>`;
+    footer.appendChild(credit);
+    const gitLogo = document.createElement('img');
+    gitLogo.src = logo;
+    footer.appendChild(gitLogo);
+    document.body.appendChild(footer);
 }

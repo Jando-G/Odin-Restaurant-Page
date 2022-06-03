@@ -120,11 +120,33 @@ input, textarea, button {
 }
 button {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #f8f8ff;
+    color: #f8f8ff;
     font-weight: 700;
     font-size: 2rem;
 }
 button:hover {
     background-color: rgba(255, 255, 255, .2);
+}
+footer {
+    background-color: black;
+    color: #f8f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    margin-right: 1rem;
+}
+a:-webkit-any-link { 
+    color:#f8f8ff;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+img {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(1);
 }
