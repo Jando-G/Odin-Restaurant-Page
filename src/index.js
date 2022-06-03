@@ -5,7 +5,7 @@ import loadMenu from './menu.js';
 import loadContact from './contact.js';
 
 initialLoad();
-loadContact();
+loadAbout();
 
 document.getElementById('about-btn').addEventListener('click', () => {
     loadAbout();
